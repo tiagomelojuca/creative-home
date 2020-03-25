@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideas | Creative Home</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="page-ideas">
+
+    <div id="wrapper">
+        <header>
+            <a href="index.html">
+                <img src="logo.png" alt="Logo Image">
+            </a>
+            <nav>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="button" onclick="toggleForm()">Add Idea</a></li>
+            </nav>
+        </header>
+    
+        <section id="title">
+            <p>showing</p>
+            <h1>Ideas</h1>
+        </section>
+    
+        <main>
+            <section id="ideas">
+    
+                <div class="idea">
+                    <img src="https://image.flaticon.com/icons/svg/2729/2729007.svg" alt="Idea Image Icon">
+                    <div class="content">
+                        <h3>Title</h3>
+                        <p>Category</p>
+                        <div class="description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis eum fugiat aspernatur voluptatum, laborum aliquam nemo quos eius! Soluta eos perspiciatis quibusdam iure consequatur quas rem dolor quaerat rerum laboriosam!
+                        </div>
+                        <a href="#">Go to Idea</a>
+                    </div>
+                </div>
+    
+                <div class="idea">
+                    <img src="https://image.flaticon.com/icons/svg/2729/2729007.svg" alt="Idea Image Icon">
+                    <div class="content">
+                        <h3>Title</h3>
+                        <p>Category</p>
+                        <div class="description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis eum fugiat aspernatur voluptatum, laborum aliquam nemo quos eius! Soluta eos perspiciatis quibusdam iure consequatur quas rem dolor quaerat rerum laboriosam!
+                        </div>
+                        <a href="#">Go to Idea</a>
+                    </div>
+                </div>
+    
+                <div class="idea">
+                    <img src="https://image.flaticon.com/icons/svg/2729/2729007.svg" alt="Idea Image Icon">
+                    <div class="content">
+                        <h3>Title</h3>
+                        <p>Category</p>
+                        <div class="description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis eum fugiat aspernatur voluptatum, laborum aliquam nemo quos eius! Soluta eos perspiciatis quibusdam iure consequatur quas rem dolor quaerat rerum laboriosam!
+                        </div>
+                        <a href="#">Go to Idea</a>
+                    </div>
+                </div>
+
+                <div class="idea">
+                    <img src="https://image.flaticon.com/icons/svg/2729/2729007.svg" alt="Idea Image Icon">
+                    <div class="content">
+                        <h3>Title</h3>
+                        <p>Category</p>
+                        <div class="description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis eum fugiat aspernatur voluptatum, laborum aliquam nemo quos eius! Soluta eos perspiciatis quibusdam iure consequatur quas rem dolor quaerat rerum laboriosam!
+                        </div>
+                        <a href="#">Go to Idea</a>
+                    </div>
+                </div>
+    
+            </section>
+        </main>
+    
+        <footer>
+            <p>Coded with <strong class="love">love</strong> by
+            <strong><a href="http://www.tiagomelojuca.com.br/" target="_blank">Tiago Melo Juca</a></strong>
+            during
+            <strong><a href="https://rocketseat.com.br/" target="_blank">Omnistack Workshop</a></p></strong>
+        </footer>
+    </div>
+
+    <div id="modal" class="hide">
+        <div class="content">
+            <h1>New Idea</h1>
+            <form action="">
+
+                <div class="input-wrapper">
+                    <label for="title">Idea</label>
+                    <input type="text" name="title">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="category">Category</label>
+                    <input type="text" name="category">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="image">Image's Link</label>
+                    <input type="url" name="image">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="description">Description</label>
+                    <textarea name="description" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="link">Idea's Link</label>
+                    <input type="url" name="link">
+                </div>
+
+                <a href="#" onclick="toggleForm()">Go Back</a>
+                <button>Send</button>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
