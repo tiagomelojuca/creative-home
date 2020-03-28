@@ -1,7 +1,7 @@
 <div id="modal" class="hide">
     <div class="content">
         <h1>New Idea</h1>
-        <form action="">
+        <form action="/" method="POST" onsubmit="return checkFields(event)">
 
             <div class="input-wrapper">
                 <label for="title">Idea</label>
@@ -25,7 +25,7 @@
 
             <div class="input-wrapper">
                 <label for="link">Idea's Link</label>
-                <input type="url" name="link">
+                <input type="url" name="url">
             </div>
 
             <a href="#" onclick="toggleForm()">Go Back</a>
