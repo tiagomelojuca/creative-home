@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% include "metatags.html" %}
+    <title>Ideas | Creative Home</title>
+    {% include "includes.html" %}
+</head>
+<body id="page-ideas">
+
+    <div id="wrapper">
+        <header>
+            {% include "header.html" %}
+            {% include "navbar.html" %}
+        </header>
+    
+        <section id="title">
+            <p>showing</p>
+            <h1>Ideas</h1>
+        </section>
+    
+        <main>
+            <section id="ideas">
+                {% include "getideas.html" %}
+            </section>
+        </main>
+        {% include "footer.html" %}
+    </div>
+
+    {% include "modal.html" %}
+    <script src="main.js"></script>
+</body>
+</html>

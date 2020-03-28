@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% include "metatags.html" %}
+    <title>Creative Home | Rocketseat Workshop</title>
+    {% include "includes.html" %}
+</head>
+<body>
+    <div id="wrapper">
+
+        <section id="intro">
+            <header>
+                {% include "header.html" %}
+            </header>
+
+            <main>
+                {% include "maintxt.html" %}
+            </main>
+
+            <section id="buttons">
+                <button onclick="toggleForm()">+ Add Idea</button>
+                <a href="/ideas" class="button">See Ideas</a>
+            </section>
+
+            {% include "footer.html" %}
+        </section>
+
+        <section id="latest-ideas">
+            {% include "getideas.html" %}
+        </section>
+
+    </div>
+
+    <div id="mobile-only">
+        {% include "footer.html" %}
+    </div>
+
+    {% include "modal.html" %}
+    <script src="main.js"></script>
+</body>
+</html>
