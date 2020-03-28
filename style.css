@@ -30,10 +30,11 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 400ms;
 }
 
 .button:hover {
-    background-color: #0984e3;
+    background-color: rgb(212, 41, 81);
     text-decoration: none;
 }
 
@@ -223,7 +224,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #0984e3;
+    background-color: rgb(212, 41, 81);
     color: #fff;
     text-decoration: none;
 }
@@ -279,4 +280,75 @@ form button:hover {
 #page-ideas section#ideas,
 #page-ideas footer {
     margin-top: 64px;
+}
+
+@media screen and (min-width: 769px){
+    body #footer-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    body #wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    body #wrapper #intro {
+        width: 100%;
+        text-align: center;
+    }
+
+    body #wrapper #intro {
+        margin-right: 0;
+    }
+
+    body #wrapper #intro footer {
+        display: none;
+    }
+
+    body #footer-mobile p {
+        margin-top: 0;
+    }
+
+    #page-ideas #wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #page-ideas header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #page-ideas header nav {
+        margin-top: 16px;
+    }
+
+    #page-ideas section#ideas {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    #page-ideas #wrapper main #ideas {
+        margin-top: 0;
+    }
+
+    #page-ideas #wrapper footer {
+        margin-top: 0;
+    }
+    
+    #modal form {
+        width: 95vw;
+        max-width: 95vw;
+        margin: 15% auto;
+        padding: 0 auto;
+        display: grid;
+        grid-template-columns: minmax(0, 45vw) minmax(0, 45vw);
+        gap: 5vw;
+    }
+
 }
